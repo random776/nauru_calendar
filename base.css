@@ -1,7 +1,6 @@
 body {
     font-family: "游ゴシック Light", sans-serif;
     background-color: rgb(40, 40, 56);
-    margin: 50px;
     color: rgb(216, 216, 216);
   }
   
@@ -9,15 +8,7 @@ body {
     font-weight: lighter;
     font-size: 2rem;
   }
-  p {
-    font-size: 1.3rem;
-  }
 
-.span {
-    font-size: 5rem;
-    display: block;
-    line-height: 25px;
-}
 .btn4 {
     text-transform: uppercase;
     text-align: center;
@@ -51,4 +42,32 @@ body {
     -webkit-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
     transform: scale(1, 1);
+  }
+
+  @media screen and (max-width: 767px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+    .span {
+        font-size: 1.5rem;
+        display: block;
+        line-height: 25px;
+    }
+    body {
+        margin: 14px;
+    }
+  }
+  
+  @media screen and (min-width: 767px) {
+    body {
+        margin: 50px;
+    }
+    .span {
+        font-size: 5rem;
+        display: block;
+        line-height: 25px;
+    }
+    p {
+        font-size: 1.3rem;
+      }
   }
