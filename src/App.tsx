@@ -27,7 +27,7 @@ function App() {
       height: "18px",
       width: "18px",
       margin: "4px",
-      border: "3px solid black",
+      border: "2px solid black",
       borderRadius: "2px",
       display: "inline-block"
       }}></span>}
@@ -36,21 +36,21 @@ function App() {
       width: "18px",
       margin: "4px",
       borderRadius: "2px",
-      border: "3px solid black",
+      border: "2px solid black",
       display: "inline-block"}}></span><br/></>}
        {number >= percentage && number % 10 !== 0 &&<span key={number} style={{backgroundColor: "rgb(40, 40, 56)",
       height: "18px",
       width: "18px",
       margin: "4px",
       borderRadius: "2px",
-      border: "3px solid white",
+      border: "2px solid white",
       display: "inline-block"}}></span>}
       {number >= percentage && number % 10 === 0 && <><span key={number} style={{backgroundColor: "rgb(40, 40, 56)",
       height: "18px",
       width: "18px",
       margin: "4px",
       borderRadius: "2px",
-      border: "3px solid white",
+      border: "2px solid white",
       display: "inline-block"}}></span><br/></>}
       
       </>
