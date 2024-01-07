@@ -21,17 +21,38 @@ export function Base() {
 function App() {
   return (
     <>
-    {arr.map((number) => (
+      {arr.map((number) => (
       <>
-      {number < percentage && number % 10 !== 0 && <span key={number} className="span" style={{
+      {number < percentage && number % 10 !== 0 && <span key={number} style={{backgroundColor: "rgb(216, 216, 216)",
+      height: "18px",
+      width: "18px",
+      margin: "4px",
+      border: "3px solid black",
+      borderRadius: "2px",
       display: "inline-block"
-      }}>■</span>}
-      {number < percentage && number % 10 === 0 && <><span key={number} className="span" style={{
-      display: "inline-block"}}>■</span><br/></>}
-       {number >= percentage && number % 10 !== 0 &&<span key={number} className="span" style={{
-      display: "inline-block"}}>□</span>}
-      {number >= percentage && number % 10 === 0 && <><span key={number} className="span" style={{
-      display: "inline-block"}}>□</span><br/></>}
+      }}></span>}
+      {number < percentage && number % 10 === 0 && <><span key={number} style={{backgroundColor: "rgb(216, 216, 216)",
+      height: "18px",
+      width: "18px",
+      margin: "4px",
+      borderRadius: "2px",
+      border: "3px solid black",
+      display: "inline-block"}}></span><br/></>}
+       {number >= percentage && number % 10 !== 0 &&<span key={number} style={{backgroundColor: "rgb(40, 40, 56)",
+      height: "18px",
+      width: "18px",
+      margin: "4px",
+      borderRadius: "2px",
+      border: "3px solid white",
+      display: "inline-block"}}></span>}
+      {number >= percentage && number % 10 === 0 && <><span key={number} style={{backgroundColor: "rgb(40, 40, 56)",
+      height: "18px",
+      width: "18px",
+      margin: "4px",
+      borderRadius: "2px",
+      border: "3px solid white",
+      display: "inline-block"}}></span><br/></>}
+      
       </>
     ))}
     <p>＊ このサイトの制作者「かっちゃん」のHP・お問い合わせは <a className="btn4"href="https://random776.github.io/kacchan_home/">こちら</a> から。</p>
